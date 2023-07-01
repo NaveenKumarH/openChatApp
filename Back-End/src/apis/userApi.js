@@ -9,3 +9,4 @@ userApi.get("/user/:id", async (req, res) => {
     res.send(err.message).status(400);
   }
 });
+module.exports = userApi;
