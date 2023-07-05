@@ -13,5 +13,5 @@ app.use(roomApi);
 app.use(userApi);
 app.use();
 app.listen("8500", () => {
-  console.log("Running in port 8500!!");
+  console.log("Running on port 8500!!");
 });
