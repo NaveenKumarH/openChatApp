@@ -4,11 +4,11 @@ const props = defineProps({ user: String })
 <template>
     <div class="div_main">
         <div class="div_boxContent">
-            <h5>Hola!! {{ props.user }}</h5>
+            <div class="textContent">Hola!! {{ props.user }}</div>
+            <input type="text" /> <button>Create</button>
+            <input type="text" /> <button>Join</button>
         </div>
 
     </div>
 </template>
-<style scoped>
-
-</style>
+<style scoped></style>

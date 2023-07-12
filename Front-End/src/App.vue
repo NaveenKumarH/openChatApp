@@ -1,9 +1,11 @@
 <script setup>
 import Opener from './components/Opener.vue'
+import Logged from './components/Logged.vue'
 </script>
 
 <template>
-  <Opener />
+  <!-- <Opener/> -->
+  <Logged user="NK" />
 </template>
 
 <style>
@@ -20,6 +22,8 @@ body {
   padding-left: 75px;
   padding-right: 75px;
 }
+
+
 
 .div_boxContent {
   display: flex;
@@ -39,12 +43,14 @@ body {
 .textContent {
   background-color: aliceblue;
 }
-input{
-    margin: 10px;
-    font-size: 2rem;
-    border-radius: 5px;
+
+input {
+  margin: 20px;
+  font-size: 2rem;
+  border-radius: 5px;
 }
-button{
+
+button {
   font-size: 2rem;
   margin: 10px;
   border-radius: 5px;
@@ -53,27 +59,36 @@ button{
   color: aliceblue;
   padding: 15px;
 }
+
 @media screen and (max-width: 940px) {
   .div_boxContent {
     font-size: 3rem;
   }
-  input{
+
+  input {
     font-size: 1.5rem;
   }
-  button{
+
+  button {
     font-size: 1.5rem;
   }
+
+
 }
+
 @media screen and (max-width: 640px) {
   .div_boxContent {
     font-size: 2rem;
   }
-  input{
-    font-size: 1rem;
-  }
-  button{
-    font-size: 1rem;
-  }
-}
 
+  input {
+    font-size: 1rem;
+  }
+
+  button {
+    font-size: 1rem;
+  }
+
+
+}
 </style>
