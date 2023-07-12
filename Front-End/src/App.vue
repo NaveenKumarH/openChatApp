@@ -44,11 +44,23 @@ input{
     font-size: 2rem;
     border-radius: 5px;
 }
+button{
+  font-size: 2rem;
+  margin: 10px;
+  border-radius: 5px;
+  border-style: hidden;
+  background-color: rgb(2, 2, 21);
+  color: aliceblue;
+  padding: 15px;
+}
 @media screen and (max-width: 940px) {
   .div_boxContent {
     font-size: 3rem;
   }
   input{
+    font-size: 1.5rem;
+  }
+  button{
     font-size: 1.5rem;
   }
 }
@@ -57,6 +69,9 @@ input{
     font-size: 2rem;
   }
   input{
+    font-size: 1rem;
+  }
+  button{
     font-size: 1rem;
   }
 }
