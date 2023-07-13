@@ -13,6 +13,17 @@ const roomSchema = new mongoose.Schema({
   users: {
     type: [String],
   },
+  private: {
+    type: Boolean,
+    required: true,
+  },
+  openedBy: {
+    type: String,
+    required: true,
+  },
+  password: {
+    type: String,
+  },
 });
 const Room = mongoose.model("rooms", roomSchema);
 module.exports = Room;
